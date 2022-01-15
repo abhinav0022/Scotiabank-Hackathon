@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styleSheet.css">
+</head>
+
+<body>
+
+<div class="tab">
+  <button onclick= "changeTab('homeDiv')" id="tab1">Home</button>
+  <button onclick= "changeTab('convenienceDiv')" id="tab2">Convenience</button>
+  <button  onclick= "changeTab('securityDiv')" id="tab3">Security</button>
+  <button  onclick= "changeTab('riskDiv')" id="tab4">Risk Management</button>
+  <button  onclick= "changeTab('citationsDiv')" id="tab5">Citations</button>
+</div>
+
+<div id = "homeDiv">
+  <div class = "slideshow-container">
+    <div class="mySlides fade">
+
+      <div class="container">
+        <img src="images/fob.jpg" alt="image" class="titleImage">
+    	  <div class="overlay">
+
+          <div class = "overlayText">
+            <h1>
+              Introduction
+            </h1>
+            <h2>
+              As technology rapidly develops around us, becoming further ingrained into our everyday lives,
+              we find it inevitable that banks will adapt, and take advantage of these changes. Here, we will
+              explore three possibilities for that future.
+              <br><br>
+              With <span style = "color: #86C232"> mobile banking </span>, we expect an increased demand for <span style = "color: #86C232">convenience </span>.
+              <br>
+              With<span style = "color: #86C232"> quantum computing </span> and other technologies, we will see opportunities and threats to <span style = "color: #86C232">security</span>.
+              <br>
+              With<span style = "color: #86C232"> machine learning </span>, we will see better models for <span style = "color: #86C232">risk management</span>.
+            </h2>
+        </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div style="text-align:center; height:30px; margin-top: 20px;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+  </div>
+</div>
+
+<div id="convenienceDiv">
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class = "textTable">
+      <div class = "slideText" >
+        <h1>
+          The Mobile User
+        </h1>
+        <p>
+          It’s no secret that consumers are wanting to access their data from anywhere.
+          With the development of smartphones, being constantly connected has become a part of life.
+          <br><br>
+          This holds true for banking. 89% of people use mobile banking in some way, and it’s not hard to see why [1].
+          Mobile banking makes this data access easy - from the managing of accounts, to bill payments - all over a mobile app.
+        </p>
+      </div>
+      <div class = "imageHolder">
+        <img src="images/mobileUser.png" class = "exampleImage">
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade" >
+    <div class = "textTable">
+      <div class = "slideText">
+        <h1>
+          The Rise of Mobile Banking
+        </h1>
+        <p>
+          With mobile banking growing at 5x the rate of online banking, we should only expect its prevalence to
+          continue [1]. One obvious development then, is the greater demand for mobile functionality. From arranging
+          mortgages to making investments, consumers will want more features that traditionally required in person
+          meetings. Of course, with this, we will require more security, as well as calculating risk accurately, and rapidly.
+          <br><br>
+          These developments will need to be backed by technological breakthroughs however. Some examples could be
+          with virtual banking assistants, or augmented reality.
+        </p>
+      </div>
+      <div class = "imageHolder">
+        <img src="images/scotiaApp.png" class = "exampleImage">
+      </div>
+  </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class = "textTable">
+      <div class = "slideText">
+        <h1>
+          Virtual Assistants
+        </h1>
+        <p>
+          Virtual assistants could take on much of the work of a human bank teller. They could possibly advise on financial management,
+          investments, and even arrange loans and mortgages, all by conversing with a program on your phone. Although current virtual
+          assistants like siri leave much to be desired, it’s almost certain that in the next 10 years, we will have programs that can
+          outperform human bank tellers in the majority of standardized tasks.
+        </p>
+      </div>
+      <div class = "imageHolder">
+        <img src="images/virtualAssistant.png" class = "exampleImage">
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class = "textTable">
+      <div class = "slideText">
+        <h1>
+          Augmented Reality
+        </h1>
+        <p>
+          Augmented reality is an emerging, but promising technology - adding virtual objects to real time video to ‘augment’
+          the reality you’re seeing. With mobile banking, it can be used for things like giving you an expected interest rate when
+          pointing your camera at a car in the dealership, or a mortgage rate when pointed at a house.
+        </p>
+      </div>
+      <div class = "imageHolder">
+        <img src="images/augReality.png" class = "exampleImage">
+      </div>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+  </div>
+  <br>
+  <div style="text-align:center; height:30px;">
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+</div>
+
+
+<div id="securityDiv">
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class = "textTable">
+      <div class = "slideText">
+        <h1>
+          Digital Security
+        </h1>
+        <p>
+          Security is at the forefront of all banking services. We currently have measures in place to help ensure consumers
+          keep their accounts secure, and encrypted protection for the billions of dollars being transferred between financial
+          institutions each day [2]. But as technology progresses, it brings with it both new threats, and opportunities,
+          that we will have to face.
+          <br><br>
+          Here, we will discuss two sides to that future: increasing consumer security through biometric, machine learning,
+          and mobile verification, as well as the threats to encryption looming on the horizon.
+        </p>
+      </div>
+      <div class = "imageHolder">
+        <img src="images/cyberSec.png" class = "exampleImage">
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div>
+      <h1 style = "text-align: left; padding-left: 50px; position: relative; top: 5px">
+        Consumer Security
+      <h2>
+    </div>
+    <div class="vtab">
+    	<button class="tablinks1" onclick="openSubTab(event, 1, 'SubTab1')" id="defaultOpen1">Biometrics</button>
+    	<button class="tablinks1" onclick="openSubTab(event, 1, 'SubTab2')">Fraud Detection</button>
+    	<button class="tablinks1" onclick="openSubTab(event, 1, 'SubTab3')">Mobile Security</button>
+    </div>
+    <div id="SubTab1" class="tab1Content">
+      <div class = "textTable"  style = "left: 200px">
+        <div class = "slideText" style = "padding-left: 0">
+          <h3>Biometrics</h3>
+          <p>
+            The increased demand for convenience with mobile banking lends itself to a number of new security opportunities.
+            <br><br>
+            One is the inclusion of biometrics. While current security methods use authentication such as pin numbers and government ID,
+            a much more secure method of authentication would be through unique biometrics - such as fingerprints. With nearly all
+            phones, and some laptops, sporting fingerprint scanners, it may not be such a stretch to suggest similar means of security
+            on card readers or ATMs.
+          </p>
+        </div>
+        <div class = "imageHolder">
+          <img src="images/biometrics.png" class = "exampleImage">
+        </div>
+      </div>
+    </div>
+
+    <div id="SubTab2" class="tab1Content">
+      <div class = "textTable"  style = "left: 200px">
+        <div class = "slideText" style = "padding-left: 0">
+          <h3>Fradulent Spending</h3>
+          <p>
+            Another may be the use of machine learning to track fraudulent spending. Well trained neural nets can be very effective
+            at spotting patterns and conversely, suspicious breaks in those patterns. By feeding in typical spending activity, location
+            data, and any other information you may have on your consumer, such a model could be able to detect fraudulent transactions
+            to a higher degree of accuracy than our current automated systems [3].
+          </p>
+        </div>
+        <div class = "imageHolder">
+          <img src="images/cyberFraud.png" class = "exampleImage">
+        </div>
+      </div>
+    </div>
+
+    <div id="SubTab3" class="tab1Content">
+      <div class = "textTable"  style = "left: 200px">
+        <div class = "slideText" style = "padding-left: 0">
+          <h3>Mobile Security</h3>
+          <p>
+            Finally, the increase in mobile banking means that your customer could be reachable wherever they are, and allows
+            them to take appropriate steps to rapidly respond to any breaches in security. With a more robust mobile platform,
+            and possibly the help of a virtual assistant, they could lock accounts, freeze payments, or even dispute charges
+            without needing to speak to a human representative.
+          </p>
+        </div>
+        <div class = "imageHolder">
+          <img src="images/mobileSec.png" class = "exampleImage">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div>
+      <h1 style = "text-align: left; padding-left: 50px; position: relative; top: 5px">
+        The Encryption Dilemma
+      <h2>
+    </div>
+    <div class="vtab">
+    	<button class="tablinks2" onclick="openSubTab(event ,2 ,'SubTab4')" id="defaultOpen2">Encryption</button>
+    	<button class="tablinks2" onclick="openSubTab(event ,2 ,'SubTab5')">Quantum Computing</button>
+    	<button class="tablinks2" onclick="openSubTab(event ,2 ,'SubTab6')">How Close?</button>
+      <button class="tablinks2" onclick="openSubTab(event ,2 ,'SubTab7')">Protection</button>
+    </div>
+    <div id="SubTab4" class="tab2Content">
+      <div class = "textTable"  style = "left: 200px">
+        <div class = "slideText" style = "padding-left: 0">
+          <h3>Encryption</h3>
+          <p>
+            In terms of back end security, encryption is the key that ties everything together. All modern financial
+            transfers are encrypted, typically with AES protocol. This protocol encodes text using a secret key - making
+            it gibberish without using said key to decode it. The longer your key, the more secure your encryption.
+            With current computing, cracking 128 bit AES encryption would take hundreds of trillions of years. But,
+            quantum computers can change all of this .
+          </p>
+        </div>
+        <div class = "imageHolder">
+          <img src="images/biometrics.png" class = "exampleImage">
+        </div>
+      </div>
+    </div>
+
+    <div id="SubTab5" class="tab2Content">
+      <div class = "textTable"  style = "left: 200px">
+        <div class = "slideText" style = "padding-left: 0">
+          <h3>Quantum Computing</h3>
+          <p>
+            Quantum computers rely on quantum bits (or qubits) rather than traditional binary bits. Qubits take
+            advantage of two phenomena: superposition - giving them the ability to represent a 1 and 0 simultaneously,
+            and entanglement - meaning each qubit is able to affect and work with other qubits around it. These
+            properties make quantum computers better at some tasks than traditional computers, such as finding prime
+            factors of very large numbers, which so happens to be what all our encryption is based on [4].
+          </p>
+        </div>
+        <div class = "imageHolder">
+          <img src="images/cyberFraud.png" class = "exampleImage">
+        </div>
+      </div>
+    </div>
+
+    <div id="SubTab6" class="tab2Content">
+      <div class = "textTable"  style = "left: 200px">
+        <div class = "slideText" style = "padding-left: 0">
+          <h3>Closer Than We Think</h3>
+          <p>
+            Although seemingly far in the future, the possibility of quantum computers breaking encryption is very real,
+            with a 53 qubit computer already developed by google [5]. Although breaking AES 128 would require millions of
+            such qubits, experts predict that this previously impossible task could be accomplished by a quantum computer
+            in the next couple of decades [6]. And this doesn’t even include less secure but still very popular encryption
+            methods such as RSA.
+          </p>
+        </div>
+        <div class = "imageHolder">
+          <img src="images/mobileSec.png" class = "exampleImage">
+        </div>
+      </div>
+    </div>
+
+    <div id="SubTab7" class="tab2Content">
+      <div class = "textTable"  style = "left: 200px">
+        <div class = "slideText" style = "padding-left: 0">
+          <h3>How Can We Protect Aginst This?</h3>
+          <p>
+            Where do we go from here? According to current predictions, AES encryption could still be secure with 256 bit keys.
+            However, AES encryption also requires a different encryption method to distribute its secret keys, which is often
+            done with quantum-vulnerable RSA encryption. One solution for this could be through quantum key distribution (QKD),
+            which uses photons. The advantage of QKD is that an eavesdropper would destroy the incoming data, and due to quantum
+            uncertainty, be unable to accurately recreate it - easily allowing the receiver to detect tampering [7].
+          </p>
+        </div>
+        <div class = "imageHolder">
+          <img src="images/mobileSec.png" class = "exampleImage">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div id = "securityDots" style="text-align:center; height:30px; position: relative">
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+  </div>
+</div>
+
+<div id="riskDiv">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class = "textTable">
+    <div class = "slideText">
+      <h1>
+        Risk Management
+      </h1>
+      <p>
+        A large part of a modern bank’s work is risk management. Determining appropriate interest rates for loans, finding
+        good investments to grow capital, are all traditionally done through a mix of advanced algorithms, equations, and
+        human judgement. In this vein, the future provides a promising new technology to augment decision making - machine learning.
+      </p>
+    </div>
+    <div class = "imageHolder">
+      <img src="images/riskReward.png" class = "exampleImage">
+    </div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class = "textTable">
+    <div class = "slideText">
+      <h1>
+        Machine Learning
+      </h1>
+      <p>
+        Machine learning tools are fantastic at picking up on patterns that humans may miss. Unsupervised models especially, can
+        be especially effective at pattern finding, but like all models, require huge volumes of data to train properly. Banking
+        in particular is well suited for this - with millions of daily customers, performing hundreds of millions of transactions,
+        data volume could very well be a nonissue [8].
+      </p>
+    </div>
+    <div class = "imageHolder">
+      <img src="images/clustering.png" class = "exampleImage">
+    </div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class = "textTable">
+    <div class = "slideText">
+      <h1>
+        Examples
+      </h1>
+      <p>
+        Machine learning can have multiple applications. Credit score, transaction history, and any number of other factors
+        can be fed into a trained model to determine someone’s risk of defaulting on a loan. Market analytical data, company
+        performance, and historical information may be used to predict investment performance. The key advantage is that
+        machine learning models can pour over more data and find connections that humans or traditional algorithms simply can’t.
+      </p>
+    </div>
+    <div class = "imageHolder">
+      <img src="images/businessAI.png" class = "exampleImage">
+    </div>
+  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center; height:30px;">
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+</div>
+
+</div>
+
+<div id = "citationsDiv" style = "height:82vh">
+  <div class="slideshow-container" style = "height: 88%">
+
+  <div class="mySlides fade">
+    <div class = "textTable">
+      <div class = "slideText" style = "text-align: left; padding-left: 5%; font-size: 11px">
+        <h1>
+          Citations
+        </h1>
+        <p>
+          [1]	A. Phaneuf, “The future of retail, mobile, online, and digital-only banking technology,” Aug. 2019, Accessed: Jul. 26, 2020. [Online].Available: https://www.businessinsider.com/future-of-banking-technology.
+          <br>
+          [2]	“Fedwire Funds Service - Monthly Statistics.” https://www.frbservices.org/resources/financial-services/wires/volume-value-stats/monthly-stats.html .
+          <br>
+          [3]	The Ascent Staff, “How Do Credit Card Companies Spot Fraud?,” The Ascent, Nov. 20, 2018. https://www.fool.com/the-ascent/credit-cards/articles/how-do-credit-card-companies-spot-fraud/ .
+          <br>
+          [4]	“Bloomberg - Are you a robot?” https://www.bloomberg.com/news/articles/2019-10-26/why-quantum-computers-will-be-super-awesome-someday-quicktake#:~:text=But%20in%20a%20quantum%20computer,more%20information%20so%20much%20faster. .
+          <br>
+          [5]	T. Childers, “Google’s Quantum Computer Just Aced an ‘Impossible’ Test,” Oct. 2019, Accessed: Jul. 26, 2020. [Online]. Available: https://www.livescience.com/google-hits-quantum-supremacy.html.
+          <br>
+          [6]	L. Armasu, “Quantum Computers May Not Break Encryption for Decades, Say Researchers,” Mar. 2019, Accessed: Jul. 26, 2020. [Online]. Available: https://www.tomshardware.com/news/quantum-computers-encryption-decades-researchers,38819.html.
+          <br>
+          [7]	“How Does Quantum Key Distribution Work? | QKD Explained,” QuantumXC. https://quantumxc.com/how-does-quantum-key-distribution-work/ .
+          <br>
+          [8]	“Website.” https://www.tjip.com/en/publications/managing-financial-risk-with-machine-learning#:~:text=Some%20banks%20have%20instituted%20machine%20learning%20systems%20to%20help%20manage%20their%20risk.&text=Machine%20learning%20could%20also%20be,of%20defaulting%20on%20a%20loan. .
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class = "textTable">
+      <div class = "slideText" style = "text-align: left; padding-left: 5%; font-size: 11px">
+        <h1>
+          Image References
+        </h1>
+        <p>
+          Scotiabank mobile banking app.” https://www.scotiabank.com/content/scotiabank/ca/en/personal/ways-to-bank/mobile-tablet/mobile-banking-app.html .
+          <br>
+          “What Mobile Users Expect from Mobile Apps,” Applause. https://www.applause.com/blog/what-mobile-users-expect-from-mobile-apps .
+          <br>
+          K. Sloan, “4 Awesome Business Benefits of Hiring a Virtual Assistant,” Due, May 12, 2018. https://due.com/blog/benefits-hiring-virtual-assistant/ .
+          <br>
+          “IKEA Creates a Place for Augmented Reality.” https://www.linkedin.com/pulse/ikea-creates-place-augmented-reality-mike-edmonds .
+          <br>
+          “Credit Card Data Security Concept Data Stock Photo (Edit Now) 287890574,” Accessed: Jul. 26, 2020. [Online]. Available: https://image.shutterstock.com/image-photo/credit-card-data-security-concept-260nw-287890574.jpg.
+          <br>
+          Florida Tech Marketing and Communications, “What Is Biometric Security? Is It a Safe Option? | Florida Tech Ad Astra,” Florida Tech Ad Astra, Oct. 16, 2018. https://adastra.fit.edu/blog/floridatechbound/what-is-biometric-security-is-it-a-safe-option/ .
+          <br>
+          L. L. C. Cocolevio, “How To Detect Credit Card Fraud Through Transaction Time Using Machine Learning,” Aug. 2019, Accessed: Jul. 26, 2020. [Online]. Available: https://medium.com/cocolevio/detecting-credit-card-fraud-through-transaction-time-741cfa234f38.
+          <br>
+          K. Dalhunova, “5 mobile banking security tips to protect customers’ data,” ScienceSoft, Mar. 28, 2018. https://www.scnsoft.com/blog/5-mobile-banking-security-tips .
+          <br>
+          “Website.” http://feelgrafix.com/997348-code.html .
+          <br>
+          N. Kolakowski, “Quantum Computing: Will It Actually Produce Jobs?,” Dice Insights, Mar. 17, 2020. https://insights.dice.com/2020/03/17/quantum-computing-will-actually-produce-jobs/ .
+          <br>
+          M. Giles, “Explainer: What is a quantum computer?,” MIT Technology Review, Jan. 29, 2019. https://www.technologyreview.com/2019/01/29/66141/what-is-quantum-computing/ .
+          <br>
+          H. Kent Baker and G. Filbeck, “Investment Risk Management: Baker, H. Kent, Filbeck, Greg: 9780199331963: Books - Amazon.ca.” https://www.amazon.ca/Investment-Risk-Management-Kent-Baker/dp/0199331960 .
+          <br>
+          “Clustering with Machine Learning - Blog | Rocketloop,” Rocketloop, Apr. 01, 2019. https://rocketloop.de/en/clustering-with-machine-learning/ .
+          <br>
+          “Why Marketing AI is the Future of Content Marketing,” Curata Blog, Sep. 11, 2017. http://www.curata.com/blog/content-marketing-ai/ .
+          <br>
+          N. Mali, “Mobile Commerce 101: M-Commerce Trends + Stats (Updated for 2020),” The BigCommerce Blog, Sep. 24, 2018. https://www.bigcommerce.com/blog/mobile-commerce/ (accessed Jul. 26, 2020).
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+
+  </div>
+  <br>
+  <div style="text-align:center; height:30px; margin-top: 20px;">
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+const slideDivisions = [1, 2, 6, 9, 12, 14];
+
+showSlides(slideIndex);
+changeTabColor(1)
+
+function changeTabColor (set){
+
+  var curTab = document.getElementById("tab" + set);
+  curTab.style.backgroundColor =  "#6B6E70";
+  curTab.style.color = "#86C232";
+  for (var i = 0; i < slideDivisions.length - 1; i++){
+    if (i + 1 != set){
+      tabVal = i + 1
+      console.log("tab" + tabVal)
+      curTab = document.getElementById("tab" + tabVal);
+      curTab.style.backgroundColor =  "#222629";
+      curTab.style.color = "white";
+    }
+  }
+}
+
+function plusSlides(n, set) {
+  start = slideDivisions [set]
+  end = slideDivisions [set+1]
+  console.log("%d %d %d", slideIndex + n, start, end)
+  if (slideIndex + n == 7 || slideIndex + n == 8){
+    securityDots = document.getElementById("securityDots")
+    securityDots.style.right = "75px"
+  }
+  else if (slideIndex + n == 6){
+    securityDots.style.right = "0px"
+  }
+  if (slideIndex + n >= start && slideIndex + n < end){
+    var prevArrows = document.getElementsByClassName("prev")
+    var nextArrows = document.getElementsByClassName("next")
+    for (var i = 0; i < prevArrows.length; i++){
+      prevArrows[i].style.visibility = slideIndex + n == start ? "hidden" : "visible"
+    }
+    for (var i = 0; i < nextArrows.length; i++){
+      nextArrows[i].style.visibility = slideIndex + n == end -1 ? "hidden" : "visible"
+    }
+    showSlides(slideIndex += n);
+  }
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  var prevArrows = document.getElementsByClassName("prev")
+  var nextArrows = document.getElementsByClassName("next")
+
+  var indexType = 0
+
+  for (i = 0; i < slideDivisions.length; i++){
+    if (n == slideDivisions[i]){
+      indexType = 1; //starting slide
+    }
+    if (n == slideDivisions[i]-1){
+      indexType = 2; //ending slide
+    }
+  }
+
+  if (slideIndex == 7 || slideIndex == 8){
+    securityDots = document.getElementById("securityDots")
+    securityDots.style.right = "75px"
+  }
+  else if (slideIndex == 6){
+    securityDots.style.right = "0px"
+  }
+
+  for (var i = 0; i < prevArrows.length; i++){
+    prevArrows[i].style.visibility = indexType == 1 ? "hidden": "visible";
+    nextArrows[i].style.visibility = indexType == 2 ? "hidden": "visible";
+  }
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+function changeTab(curTab) {
+  //curTab is a string with the div name
+
+  var tabDict = {'homeDiv': 0, 'convenienceDiv': 1, 'securityDiv': 2, 'riskDiv': 3, 'citationsDiv': 4}
+  var tabs = ['homeDiv', 'convenienceDiv', 'securityDiv', 'riskDiv', 'citationsDiv']
+  var prevArrows = document.getElementsByClassName("prev")
+  var nextArrows = document.getElementsByClassName("next")
+
+  console.log(tabDict[curTab] + 1)
+  changeTabColor (tabDict[curTab] + 1)
+
+  for (var i = 0; i < prevArrows.length; i++){
+    prevArrows[i].style.visibility = "hidden";
+    nextArrows[i].style.visibility = "visible";
+  }
+
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slideIndex = slideDivisions[tabDict[curTab]];
+  console.log(slideIndex)
+  slides[slideIndex -1].style.display = "block";
+  dots[slideIndex -1].className += " active";
+
+  var x = document.getElementById(curTab);
+  x.style.display = "block";
+
+    //deactivating the rest categories
+  for (var i = 0; i < tabs.length; i ++){
+    if (tabs[i] != curTab){
+      x = document.getElementById(tabs[i]);
+      x.style.display = "none";
+    }
+  }
+}
+
+function openSubTab(evt, tabNum, subTab) {
+  var i, tab1Content, tablinks;
+  tab1Content = document.getElementsByClassName("tab" + tabNum + "Content");
+  for (i = 0; i < tab1Content.length; i++) {
+    tab1Content[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks" + tabNum);
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(subTab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen1").click();
+document.getElementById("defaultOpen2").click();
+</script>
+
+</body>
+</html>

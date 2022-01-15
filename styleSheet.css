@@ -1,0 +1,335 @@
+* {box-sizing: border-box}
+
+/* colors:
+#61892F - dark green
+#86C232 - light green
+#222629 - black
+#474B4F - grey
+#6B6E70 - light grey
+*/
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  .prev, .next,.text {font-size: 12px}
+  .slideText{
+    font-size: 11px !important;
+  }
+}
+
+body {
+  background-color: #222629;
+  font-family: Verdana, sans-serif;
+  margin:0;
+}
+  img {vertical-align: middle;
+}
+
+h1{
+  font-size: 24px;
+  color: #86C232;
+}
+h2{
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  font-weight: 500;
+}
+h3{
+  font-size: 18px;
+  color: #86C232;
+  text-align: left;
+  font-weight: 500;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  height: 20%;
+  position: relative;
+  margin: auto;
+}
+.titleImage {
+  display: block;
+  height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #474B4F;
+  overflow: hidden;
+  width: 110%;
+  height:0;
+  transition: .5s ease;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlayText {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  line-height: 2;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  visibility: hidden;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #bbb;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.2s;
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #222629;
+  background-color: #222629;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: inherit;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 18px;
+  transition: 0.3s;
+  font-size: 18px;
+  color: white;
+}
+
+.tab button:hover {
+  background-color: #474B4F;
+}
+
+.tab button.active {
+  background-color: #474B4F;
+}
+
+.slideText{
+  padding-left: 10%;
+  padding-right: 5%;
+  color: white;
+  text-align: justify;
+  font-size: 16px;
+  display: table-cell;
+  vertical-align:middle;
+  line-height: 2;
+}
+
+.imageHolder{
+  display: table-cell;
+  vertical-align: middle;
+  height: 35%;
+  width: 35%;
+  padding-right: 10%;
+}
+
+.exampleImage{
+  max-width:100%;
+  max-height:100%;
+}
+
+.backgroundImage{
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mySlides {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 75vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.textTable{
+  position: absolute;
+  top: 0px;
+  height: 75vh;
+  display: table;
+}
+
+/* Style the vertical tabs */
+.vtab {
+  position: relative;
+  float: left;
+  background-color: #222629;
+  /*width: 30%;*/
+  top: 2vh;
+  height: 75vh;
+}
+
+/* Style the buttons inside the tab */
+.vtab button {
+  position:relative;
+  top: 15%;
+  display: block;
+  background-color: inherit;
+  color: #CDCDCD;
+  padding: 25px 25px 25px 55px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  width: 150px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.vtab button:hover {
+  background-color: #474B4F;
+}
+
+/* Create an active/current "tab button" class */
+.vtab button.active {
+  background-color: #474B4F;
+}
+
+/* Style the tab content */
+.vtab1Content {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+.vtab2Content {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+
+#homeDiv {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #474B4F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#convenienceDiv {
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #474B4F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#securityDiv {
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #474B4F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#riskDiv {
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #474B4F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#citationsDiv {
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #474B4F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
